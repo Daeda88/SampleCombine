@@ -47,7 +47,7 @@ kotlin {
             dependencies {
                 implementation(kotlin("stdlib-common", kotlinVersion))
                 implementation("com.splendo.kaluga:base:$kalugaVersion")
-                api("com.splendo.kaluga:architecture:$kalugaVersion")
+                implementation("com.splendo.kaluga:architecture:$kalugaVersion")
 
                 // Coroutines
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-native:" +
@@ -81,7 +81,6 @@ kotlin {
         summary = "Starter template for multiplatform Kaluga projects."
         homepage = "https://github.com/splendo/kaluga-starter"
         framework {
-            export("com.splendo.kaluga:architecture:$kalugaVersion")
             isStatic = false
             transitiveExport = true
         }
