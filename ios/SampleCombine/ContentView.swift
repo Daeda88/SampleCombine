@@ -9,38 +9,30 @@ import SwiftUI
 import shared
 
 struct ContentView: View {
-    var viewModel: TestViewModel
+    let viewModelViewWrapper: ViewModelViewWrapper<TestViewModel>
     
     @ObservedObject var nameFieldText: StringCombineSubject
     @ObservedObject var nameLabelText: StringCombineObservable
     
     init() {
-        viewModel = TestViewModel()
-        nameFieldText = StringCombineSubject(architectureSubject: viewModel.nameFieldText)
-        nameLabelText = StringCombineObservable(architectureObservable: viewModel.nameLabelText)
+        viewModelViewWrapper = ViewModelViewWrapper(viewModel: TestViewModel())
+        nameFieldText = StringCombineSubject(architectureSubject: viewModelViewWrapper.viewModel.nameFieldText)
+        nameLabelText = StringCombineObservable(architectureObservable: viewModelViewWrapper.viewModel.nameLabelText)
     }
-    
-//    deinit {
-//        viewModel.clear()
-//    }
-    
+
     var body: some View {
-        VStack {
-            
-            TextField("Name", text: $nameFieldText.value)
-            .background(Color.gray)
-            Text(nameLabelText.value)
-            Button("Show result") {
-                viewModel.printToLabel()
+        viewModelViewWrapper.wrapView {
+            return VStack {
+                
+                TextField("Name", text: self.$nameFieldText.value)
+                .background(Color.gray)
+                Text(nameLabelText.value)
+                Button("Show result") {
+                    self.viewModelViewWrapper.viewModel.printToLabel()
+                }
             }
+            .padding()
         }
-        .padding()
-        .onAppear(perform: {
-            viewModel.didResume()
-        })
-        .onDisappear(perform: {
-            viewModel.didPause()
-        })
     }
 }
 
