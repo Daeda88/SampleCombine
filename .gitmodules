@@ -1,0 +1,3 @@
+[submodule "kaluga"]
+	path = kaluga
+	url = git@github.com:splendo/kaluga.git
