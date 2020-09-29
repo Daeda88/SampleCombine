@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import shared
+import SampleCombineShared
 
 struct ContentView: View {
     let viewModelViewWrapper: ViewModelViewWrapper<TestViewModel>

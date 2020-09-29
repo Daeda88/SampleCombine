@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20564076252340C3007586E2 /* ArchitectureObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20564075252340C3007586E2 /* ArchitectureObservable.swift */; };
 		20577F82251E4D180043DC7F /* ViewModelViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20577F81251E4D180043DC7F /* ViewModelViewWrapper.swift */; };
 		20863A77251E12EF00A8E567 /* SampleCombineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20863A76251E12EF00A8E567 /* SampleCombineApp.swift */; };
 		20863A79251E12EF00A8E567 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20863A78251E12EF00A8E567 /* ContentView.swift */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		1004A107FD93785271F36B40 /* Pods-SampleCombine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleCombine.debug.xcconfig"; path = "Target Support Files/Pods-SampleCombine/Pods-SampleCombine.debug.xcconfig"; sourceTree = "<group>"; };
 		18024C2C0B428D3A76E49D3A /* Pods_SampleCombine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleCombine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20564075252340C3007586E2 /* ArchitectureObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchitectureObservable.swift; sourceTree = "<group>"; };
 		20577F81251E4D180043DC7F /* ViewModelViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelViewWrapper.swift; sourceTree = "<group>"; };
 		20863A73251E12EF00A8E567 /* SampleCombine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleCombine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20863A76251E12EF00A8E567 /* SampleCombineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCombineApp.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 			children = (
 				20863AB4251E1CF700A8E567 /* CombineObserable.swift */,
 				20577F81251E4D180043DC7F /* ViewModelViewWrapper.swift */,
+				20564075252340C3007586E2 /* ArchitectureObservable.swift */,
 			);
 			path = CombineUtils;
 			sourceTree = "<group>";
@@ -179,7 +182,7 @@
 				20863A6F251E12EF00A8E567 /* Sources */,
 				20863A70251E12EF00A8E567 /* Frameworks */,
 				20863A71251E12EF00A8E567 /* Resources */,
-				98A7F80151DEF92527880F0F /* [CP] Embed Pods Frameworks */,
+				6F3EE984FF66BC230BDE6425 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -295,7 +298,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		98A7F80151DEF92527880F0F /* [CP] Embed Pods Frameworks */ = {
+		6F3EE984FF66BC230BDE6425 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -343,6 +346,7 @@
 			files = (
 				20863AB5251E1CF700A8E567 /* CombineObserable.swift in Sources */,
 				20577F82251E4D180043DC7F /* ViewModelViewWrapper.swift in Sources */,
+				20564076252340C3007586E2 /* ArchitectureObservable.swift in Sources */,
 				20863A79251E12EF00A8E567 /* ContentView.swift in Sources */,
 				20863A77251E12EF00A8E567 /* SampleCombineApp.swift in Sources */,
 			);

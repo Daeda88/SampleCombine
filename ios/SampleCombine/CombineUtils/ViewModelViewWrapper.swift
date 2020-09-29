@@ -6,9 +6,9 @@
 //
 
 import SwiftUI
-import shared
+import SampleCombineShared
 
-class ViewModelViewWrapper<VM : ArchitectureBaseViewModel> {
+class ViewModelViewWrapper<VM : BaseViewModel> {
     
     let viewModel: VM
     

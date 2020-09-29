@@ -7,11 +7,11 @@
 
 import SwiftUI
 import Combine
-import shared
+import SampleCombineShared
 
 class CombineObservable<T : Equatable, O : AnyObject> : ObservableObject {
   @Published private(set) var value: T
-  private let disposeBag = ArchitectureDisposeBag()
+  private let disposeBag = DisposeBag()
     init(architectureObservable: ArchitectureObservable<O>, defaultValue: T, mapper: @escaping (O) -> T) {
         self.value = defaultValue
         architectureObservable.observe { [unowned self] (newValue) in
@@ -68,7 +68,7 @@ class BoolCombineObservable : CombineObservable<Bool, NSNumber> {
 
 class CombineSubject<T : Equatable, O : AnyObject> : ObservableObject {
     @Published var value: T
-    private let disposeBag = ArchitectureDisposeBag()
+    private let disposeBag = DisposeBag()
     var subscription: AnyCancellable!
 
     init(architectureSubject: ArchitectureSubject<O>, defaultValue: T, toMapper: @escaping (O) -> T, fromMapper: @escaping (T) -> O) {
