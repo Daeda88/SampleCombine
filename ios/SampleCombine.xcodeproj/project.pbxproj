@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2020869B25309B9000FC3C27 /* EmptyViewControllerDataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2020869A25309B9000FC3C27 /* EmptyViewControllerDataContainer.swift */; };
 		20564076252340C3007586E2 /* ArchitectureObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20564075252340C3007586E2 /* ArchitectureObservable.swift */; };
 		20577F82251E4D180043DC7F /* ViewModelViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20577F81251E4D180043DC7F /* ViewModelViewWrapper.swift */; };
 		20863A77251E12EF00A8E567 /* SampleCombineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20863A76251E12EF00A8E567 /* SampleCombineApp.swift */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		1004A107FD93785271F36B40 /* Pods-SampleCombine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleCombine.debug.xcconfig"; path = "Target Support Files/Pods-SampleCombine/Pods-SampleCombine.debug.xcconfig"; sourceTree = "<group>"; };
 		18024C2C0B428D3A76E49D3A /* Pods_SampleCombine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleCombine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2020869A25309B9000FC3C27 /* EmptyViewControllerDataContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewControllerDataContainer.swift; sourceTree = "<group>"; };
 		20564075252340C3007586E2 /* ArchitectureObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchitectureObservable.swift; sourceTree = "<group>"; };
 		20577F81251E4D180043DC7F /* ViewModelViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelViewWrapper.swift; sourceTree = "<group>"; };
 		20863A73251E12EF00A8E567 /* SampleCombine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleCombine.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,6 +152,7 @@
 				20863AB4251E1CF700A8E567 /* CombineObserable.swift */,
 				20577F81251E4D180043DC7F /* ViewModelViewWrapper.swift */,
 				20564075252340C3007586E2 /* ArchitectureObservable.swift */,
+				2020869A25309B9000FC3C27 /* EmptyViewControllerDataContainer.swift */,
 			);
 			path = CombineUtils;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 			files = (
 				20863AB5251E1CF700A8E567 /* CombineObserable.swift in Sources */,
 				20577F82251E4D180043DC7F /* ViewModelViewWrapper.swift in Sources */,
+				2020869B25309B9000FC3C27 /* EmptyViewControllerDataContainer.swift in Sources */,
 				20564076252340C3007586E2 /* ArchitectureObservable.swift in Sources */,
 				20863A79251E12EF00A8E567 /* ContentView.swift in Sources */,
 				20863A77251E12EF00A8E567 /* SampleCombineApp.swift in Sources */,

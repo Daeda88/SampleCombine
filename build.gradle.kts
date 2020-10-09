@@ -7,6 +7,7 @@ buildscript {
     val buildGradleVersion: String by project
     val nativeCocoaPodsVersion: String by project
     repositories {
+        mavenLocal()
         google()
         jcenter()
     }

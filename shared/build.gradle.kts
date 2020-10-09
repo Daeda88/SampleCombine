@@ -46,8 +46,10 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 implementation(kotlin("stdlib-common", kotlinVersion))
-                implementation("com.splendo.kaluga:base:$kalugaVersion")
+                api("com.splendo.kaluga:resources:$kalugaVersion")
                 api("com.splendo.kaluga:architecture:$kalugaVersion")
+                api("com.splendo.kaluga:alerts:$kalugaVersion")
+                api("com.splendo.kaluga:hud:$kalugaVersion")
 
                 // Coroutines
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-native:" +
