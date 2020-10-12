@@ -68,6 +68,6 @@ class SwiftUITestNavigatorImpl : SwiftUITestNavigator {
     var viewRouter: ViewRouter!
     
     func showDetails(string: String) {
-        viewRouter.currentPage = Route.detail(text: string)
+        viewRouter.currentPage = Route.detail(view: DetailView(text: string), parent: viewRouter.currentPage)
     }
 }

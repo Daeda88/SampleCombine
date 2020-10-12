@@ -56,7 +56,10 @@ class SwiftUIDetailsNavigatorImpl : SwiftUIDetailsNavigator {
     var viewRouter: ViewRouter!
     
     func close() {
-        viewRouter.currentPage = Route.home
+        switch viewRouter.currentPage {
+        case .detail(_, let parent): viewRouter.currentPage = parent
+        default: ()
+        }
     }
     
 }

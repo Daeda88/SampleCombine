@@ -15,8 +15,8 @@ struct ContainerView : View {
     var body: some View {
         NavigationView {
             switch viewRouter.currentPage {
-            case Route.home: TestView()
-            case Route.detail(let text): DetailView(text: text)
+            case Route.home(let view): view
+            case Route.detail(let view, _): view
             }
         }
     }
