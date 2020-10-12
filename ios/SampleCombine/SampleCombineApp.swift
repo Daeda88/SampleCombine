@@ -6,12 +6,18 @@
 //
 
 import SwiftUI
+import Combine
 
 @main
 struct SampleCombineApp: App {
+    init() {
+        viewRouter = ViewRouter()
+    }
+    
+    @ObservedObject var viewRouter: ViewRouter
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContainerView().environmentObject(viewRouter)
         }
     }
 }

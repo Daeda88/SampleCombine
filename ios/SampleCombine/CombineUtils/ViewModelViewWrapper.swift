@@ -21,9 +21,9 @@ class ViewModelViewWrapper<VM : BaseViewModel> {
     }
     
     func wrapView<V : View>(view: () -> V) -> some View {
-        return view().onAppear(perform: { [unowned self] in
+        return view().onAppear(perform: {
             self.viewModel.didResume()
-        }).onDisappear(perform: { [unowned self] in
+        }).onDisappear(perform: {
             self.viewModel.didPause()
         })
     }

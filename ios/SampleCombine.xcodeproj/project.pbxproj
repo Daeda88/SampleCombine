@@ -11,12 +11,15 @@
 		20564076252340C3007586E2 /* ArchitectureObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20564075252340C3007586E2 /* ArchitectureObservable.swift */; };
 		20577F82251E4D180043DC7F /* ViewModelViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20577F81251E4D180043DC7F /* ViewModelViewWrapper.swift */; };
 		20863A77251E12EF00A8E567 /* SampleCombineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20863A76251E12EF00A8E567 /* SampleCombineApp.swift */; };
-		20863A79251E12EF00A8E567 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20863A78251E12EF00A8E567 /* ContentView.swift */; };
+		20863A79251E12EF00A8E567 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20863A78251E12EF00A8E567 /* TestView.swift */; };
 		20863A7B251E12F200A8E567 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20863A7A251E12F200A8E567 /* Assets.xcassets */; };
 		20863A7E251E12F200A8E567 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20863A7D251E12F200A8E567 /* Preview Assets.xcassets */; };
 		20863A89251E12F200A8E567 /* SampleCombineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20863A88251E12F200A8E567 /* SampleCombineTests.swift */; };
 		20863A94251E12F200A8E567 /* SampleCombineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20863A93251E12F200A8E567 /* SampleCombineUITests.swift */; };
 		20863AB5251E1CF700A8E567 /* CombineObserable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20863AB4251E1CF700A8E567 /* CombineObserable.swift */; };
+		209019D725343BC6006B03C0 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209019D625343BC6006B03C0 /* ViewRouter.swift */; };
+		209019DC253446ED006B03C0 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209019DB253446ED006B03C0 /* ContainerView.swift */; };
+		209019E425344743006B03C0 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209019E325344743006B03C0 /* DetailView.swift */; };
 		57EFAFDAAE3B708575590E4F /* Pods_SampleCombine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18024C2C0B428D3A76E49D3A /* Pods_SampleCombine.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +48,7 @@
 		20577F81251E4D180043DC7F /* ViewModelViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelViewWrapper.swift; sourceTree = "<group>"; };
 		20863A73251E12EF00A8E567 /* SampleCombine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleCombine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20863A76251E12EF00A8E567 /* SampleCombineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCombineApp.swift; sourceTree = "<group>"; };
-		20863A78251E12EF00A8E567 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		20863A78251E12EF00A8E567 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		20863A7A251E12F200A8E567 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20863A7D251E12F200A8E567 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		20863A7F251E12F200A8E567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +59,9 @@
 		20863A93251E12F200A8E567 /* SampleCombineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCombineUITests.swift; sourceTree = "<group>"; };
 		20863A95251E12F200A8E567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20863AB4251E1CF700A8E567 /* CombineObserable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineObserable.swift; sourceTree = "<group>"; };
+		209019D625343BC6006B03C0 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		209019DB253446ED006B03C0 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		209019E325344743006B03C0 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		C88B0E2390CC07D1FE7AAE28 /* Pods-SampleCombine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleCombine.release.xcconfig"; path = "Target Support Files/Pods-SampleCombine/Pods-SampleCombine.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,10 +118,13 @@
 			children = (
 				20863AB3251E1C9000A8E567 /* CombineUtils */,
 				20863A76251E12EF00A8E567 /* SampleCombineApp.swift */,
-				20863A78251E12EF00A8E567 /* ContentView.swift */,
+				20863A78251E12EF00A8E567 /* TestView.swift */,
 				20863A7A251E12F200A8E567 /* Assets.xcassets */,
 				20863A7F251E12F200A8E567 /* Info.plist */,
 				20863A7C251E12F200A8E567 /* Preview Content */,
+				209019D625343BC6006B03C0 /* ViewRouter.swift */,
+				209019DB253446ED006B03C0 /* ContainerView.swift */,
+				209019E325344743006B03C0 /* DetailView.swift */,
 			);
 			path = SampleCombine;
 			sourceTree = "<group>";
@@ -348,10 +357,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				20863AB5251E1CF700A8E567 /* CombineObserable.swift in Sources */,
+				209019E425344743006B03C0 /* DetailView.swift in Sources */,
+				209019D725343BC6006B03C0 /* ViewRouter.swift in Sources */,
 				20577F82251E4D180043DC7F /* ViewModelViewWrapper.swift in Sources */,
 				2020869B25309B9000FC3C27 /* EmptyViewControllerDataContainer.swift in Sources */,
+				209019DC253446ED006B03C0 /* ContainerView.swift in Sources */,
 				20564076252340C3007586E2 /* ArchitectureObservable.swift in Sources */,
-				20863A79251E12EF00A8E567 /* ContentView.swift in Sources */,
+				20863A79251E12EF00A8E567 /* TestView.swift in Sources */,
 				20863A77251E12EF00A8E567 /* SampleCombineApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
